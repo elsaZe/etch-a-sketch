@@ -3,11 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Etch-A-Sketch</title>
-        <link rel="stylesheet" href="./style.css">>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+        <div class = "header">
+            <h1>Doodle Pad</h1>
+            <div class = "inputs">
+                <div class="slidecontainer">
+                    <input type="range" min="10" max ="100" value = "50" class="slider" id="gridSize">
+                    <p>Grid Size: <span id="demo1"></span> x <span id="demo2"></span></p>
+                    <button id="apply">Apply</button>
+                </div>
+                <div class = "buttons">
+                    <button id ="blackButton">Black</button>
+                    <button id ="rainbowButton">Rainbow</button>
+                    <button id ="purpleButton">Purple</button>
+                </div>
+            </div>
+        </div>
         <div id="container">
-            
+
         </div>
         <script src="javascript.js"></script>
     </body>
