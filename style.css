@@ -9,36 +9,35 @@ body {
     text-align: center;
     margin-bottom: 10px;
 }
-#container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+#container {
     width: 480px;
     height: 480px;
     border: 10px solid black;
     box-shadow: 3px 3px lightblue;
+    font-size: 0;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.box {
-    border: 1px solid white;
-    display: inline-block;
-}
 
 .inputs{
     display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
 .buttons{
     display: flex;
-    justify-content:end;
-    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
 }
+
+button {
+  box-shadow: 2px 2px rgb(140, 186, 201);
+  border-radius: 5px;
+  background-color: aliceblue;
+  border-style: dotted;
+}
+
 .slidecontainer {
     width: 100%;
     padding: 10px;
@@ -52,7 +51,7 @@ body {
     height: 10px;
     border-radius: 5px;
     background: #d3d3d3;
-    box-shadow: 2px 2px gray;
+    box-shadow: 2px 2px rgb(140, 186, 201);
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
